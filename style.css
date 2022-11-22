@@ -1,0 +1,24 @@
+*{
+ margin: 0;
+}
+svg{
+    width: 47%;
+    margin-left: 22%;
+}
+main{
+text-align: center;
+background-image: url(wintery-sunburst.svg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+h2{
+    padding: 2%;
+    position: absolute;
+    width: 20%;
+    opacity: 0;
+    top: 93px;
+    border-radius: 50%;
+    border: 1px soild white;
+    left: 6%;
+    background-color: rgba(255, 255, 255, 0.348);
+}
