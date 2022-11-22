@@ -114,5 +114,23 @@ for (var i = 0; i < brow.length; i++) {
 var word = document.getElementById("Word");
 function show(input) {
 	word.innerHTML = input;
-	document.getElementById("Word").style.opacity = 1;
+	// document.getElementById("Word").style.opacity = 0;
+	
+	FadeIn(word)
+}
+
+function FadeIn(ele) {
+	var i = 0;
+	var stop = setInterval(
+		function (ele) {
+			ele.style = `opacity : ${i}`;
+			if (i <= 1) {
+				i += 0.1;
+			} else {
+				clearInterval(stop);
+			}
+		},
+		50,
+		ele
+	);
 }
