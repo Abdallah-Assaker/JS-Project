@@ -4,6 +4,7 @@ for (var i = 0; i < Hairs.length; i++) {
 	Hairs[i].addEventListener("click", function () {
 		document.getElementById("hairSound").play();
 		show("Hair");
+		Document.innerHTML=event.target;
 	});
 }
 ////For sound Eye//////
@@ -99,7 +100,7 @@ var Teddy = document.querySelectorAll(".Teddy");
 for (var i = 0; i < Teddy.length; i++) {
 	Teddy[i].addEventListener("click", function () {
 		document.getElementById("TeddySound").play();
-		show("Teddy Bear");
+		show("Teddy");
 	});
 }
 ///////////Eyw Brow/////////
@@ -134,3 +135,4 @@ function FadeIn(ele) {
 		ele
 	);
 }
+

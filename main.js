@@ -27,74 +27,73 @@ for (let i = 0; i < classes.length; i++) {
 }
 
 function Display() {
-	// console.log(event.target.getAttribute("class"));
-	// console.log(event.target)
+
 	var word;
 	switch (event.target.getAttribute("class")) {
 		case "Hair":
 			word = "Hair";
-            document.getElementById("hairSound").play();
+			document.getElementById("hairSound").play();
 			break;
 		case "Eye":
 			word = "Eye";
-            document.getElementById("eyeSound").play();
+			document.getElementById("eyeSound").play();
 			break;
 		case "Nose":
 			word = "Nose";
-            document.getElementById("noseSound").play();
+			document.getElementById("noseSound").play();
 			break;
 		case "Mouth":
 			word = "Mouth";
-            document.getElementById("mouthSound").play();
+			document.getElementById("mouthSound").play();
 			break;
 		case "EarsLeft":
 			word = "Left Ear";
-            document.getElementById("leftEarSound").play();
+			document.getElementById("leftEarSound").play();
 			break;
 		case "EarsRight":
 			word = "Right Ear";
-            document.getElementById("rightEarSound").play();
+			document.getElementById("rightEarSound").play();
 			break;
 		case "rightLeg":
 			word = "Right Leg";
-            document.getElementById("rightLegSound").play();
+			document.getElementById("rightLegSound").play();
 			break;
 		case "leftLeg":
 			word = "Left Leg";
-            document.getElementById("leftLegSound").play();
+			document.getElementById("leftLegSound").play();
 			break;
 		case "Neck":
 			word = "Neck";
-            document.getElementById("NeckSound").play();
+			document.getElementById("NeckSound").play();
 			break;
 		case "Face":
 			word = "Face";
-            document.getElementById("FaceSound").play();
+			document.getElementById("FaceSound").play();
 			break;
 		case "Clothes":
 			word = "Clothes";
-            document.getElementById("ClothesSound").play();
+			document.getElementById("ClothesSound").play();
 			break;
 		case "Hand":
 			word = "Hand";
-            document.getElementById("HandSound").play();
+			document.getElementById("HandSound").play();
 			break;
 		case "Teddy":
 			word = "Teddy Bear";
-            document.getElementById("TeddySound").play();
+			document.getElementById("TeddySound").play();
 			break;
 		case "brow":
 			word = "Eye Brow";
-            document.getElementById("browSound").play();
+			document.getElementById("browSound").play();
 			break;
 	}
-    console.log()
-    show(word)
+	console.log()
+	show(word)
 }
 
 var wordDiv = document.getElementById("Word");
 function show(input) {
-	wordDiv.innerHTML = input;	
+	wordDiv.innerHTML = input;
 	FadeIn(wordDiv)
 }
 
@@ -109,7 +108,14 @@ function FadeIn(ele) {
 				clearInterval(stop);
 			}
 		},
-		50,
+		70,
 		ele
 	);
 }
+
+setTimeout(function () {
+	document.getElementById("nav").style.display = "block"
+	document.getElementById("Secload").style.display = "none"
+	document.getElementById("secWeb").style.display = "block"
+
+}, 1300)
